@@ -26,6 +26,6 @@ server.listen(port, () => {
 
 const MONGO_URL = "mongodb+srv://femi:femi@cluster0.8pjgts3.mongodb.net/?retryWrites=true&w=majority";
 
-mongoose.Promise = global.Promise;
+mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on('error', (error: Error) => console.log(error));
