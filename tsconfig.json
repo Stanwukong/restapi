@@ -1,0 +1,15 @@
+// Enforces typescript
+{
+	"compilerOptions": {
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"baseUrl": "src",
+		"outDir": "dist",
+		"sourceMap": true,
+		"noImplicitAny": true
+	},
+	// Include all folders and files in the src folder
+	"include": [
+		"src/**/*"
+	]
+}
