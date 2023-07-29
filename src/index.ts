@@ -10,9 +10,14 @@ const app = express();
 app.use(cors({
 	credentials: true
 }));
-
 app.use(compression());
 app.use(bodyParser.json());
 app.use(cookieParser());
 
 const server = http.createServer(app);
+
+const port = 8080;
+
+server.listen(port, () => {
+	console.log(`Server listening on port http://localhost:${port}`);
+})
