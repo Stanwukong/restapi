@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import compression from 'compression';
 
+
 const app = express();
 
 app.use(cors({
@@ -21,3 +22,6 @@ const port = 8080;
 server.listen(port, () => {
 	console.log(`Server listening on port http://localhost:${port}`);
 })
+
+const MONGO_URL = "mongodb+srv://femi:femi@cluster0.8pjgts3.mongodb.net/?retryWrites=true&w=majority";
+
