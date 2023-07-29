@@ -1,8 +1,11 @@
-import crypto from 'crypto';
+import crypto from "crypto"
 
-const SECRET = 'ANTONIO-REST-API';
+const SECRET = "ANTONIO-REST-API"
 
-export const random = () => crypto.randomBytes(128).toString('base64');
+export const random = () => crypto.randomBytes(128).toString("base64")
 export const hasher = (salt: string, password: string) => {
-	return crypto.createHmac('sha256', [salt, password].join('/')).update(SECRET).digest('hex')
+  return crypto
+    .createHmac("sha256", [salt, password].join("/"))
+    .update(SECRET)
+    .digest("hex")
 }
