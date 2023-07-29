@@ -29,8 +29,7 @@ This project was inspired by [Guide to Building a REST API](https://www.youtube.
 Contributions are welcome! If you want to contribute to this project, please fork the repository and submit a pull request.
 
 For local development, you can use the following commands:
-- `npm run dev`: Run the app in development mode.
-- `npm test`: Run tests.
+- `npm start`: Run the app in development mode.
 
 ## Contact information
 If you have any questions or suggestions, feel free to contact me on [Twitter](https://twitter.com/not_femi)
